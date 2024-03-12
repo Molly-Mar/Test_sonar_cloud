@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorGray"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ocrImageView"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/ocrImageView1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground"
+        android:visibility="invisible" />
+
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ocrImageView"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/btn_capture"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:text="Capture Image" />
+
+        <Button
+            android:id="@+id/selectImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:text="Select Image" />
+
+        <Button
+            android:id="@+id/processImageBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_margin="@dimen/margin_medium"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_corner_yellow"
+            android:paddingStart="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_small"
+            android:text="Recognize Text" />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear">
+
+        <TextView
+            android:id="@+id/ocrResultEt"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_medium"
+            android:background="@android:color/transparent"
+            android:lineSpacingExtra="@dimen/margin_small"
+            android:gravity="top"
+            android:hint="Detected text will appear here."
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:paddingStart="@dimen/margin_large"
+            android:textAlignment="center"
+            android:textColor="@color/colorFullWhite"
+            android:textColorHint="@color/colorFullWhite"
+            android:textSize="@dimen/text_regular"
+            tools:ignore="RtlCompat" />
+    </ScrollView>
+
+</RelativeLayout>

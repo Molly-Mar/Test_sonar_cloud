@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "173554411248",
+    "firebase_url": "https://recognize-text-882fb.firebaseio.com",
+    "project_id": "recognize-text-882fb",
+    "storage_bucket": "recognize-text-882fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:173554411248:android:023b9fd9194b3661500435",
+        "android_client_info": {
+          "package_name": "com.padc.cardscanner_mtkm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "173554411248-lhhb2orlsbjj4fp2m3rr4t7m1i9csg3h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsF5qUAb1rMmKsBtWZ9gCPxNN63VMaZLY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "173554411248-lhhb2orlsbjj4fp2m3rr4t7m1i9csg3h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
